@@ -4,10 +4,10 @@
 
 {{#each @model as |customer|}}
 <section>
-    id: {{customer.id}} <br>
-    name: {{customer.name}} <br>
-    age: {{customer.age}} <br>
-    email: {{customer.email}}
+     name: 
+    <LinkTo @route="customer" @model={{customer.id}}>
+       {{customer.name}}
+    </LinkTo>
 </section>
 <br>
 {{/each}}
