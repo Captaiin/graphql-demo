@@ -1,0 +1,13 @@
+{{page-title "Customers"}}
+
+<h1>Customers</h1>
+
+{{#each @model as |customer|}}
+<section>
+    id: {{customer.id}} <br>
+    name: {{customer.name}} <br>
+    age: {{customer.age}} <br>
+    email: {{customer.email}}
+</section>
+<br>
+{{/each}}

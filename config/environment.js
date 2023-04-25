@@ -13,7 +13,9 @@ module.exports = function (environment) {
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
     },
-
+    apollo: {
+      apiURL: 'http://localhost:4000/graphql',
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
