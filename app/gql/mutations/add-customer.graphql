@@ -1,0 +1,8 @@
+mutation AddCustomer($name:String!, $email: String!, $age: Int!) {
+  addCustomer(name: $name, email: $email, age: $age) {
+    id
+    name
+    email
+    age
+  }
+}

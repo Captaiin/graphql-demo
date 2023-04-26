@@ -1,0 +1,25 @@
+{{page-title "Add Customer"}}
+
+<form {{on "submit" this.addCustomer}}>
+    <br>
+    <div>
+        <label for="name">name: </label>
+        <Input id="name" @type="text" @value={{this.name}}></Input>
+    </div>
+    <br>
+    <div>
+        <label for="email">email: </label>
+        <Input id="email" @type="text" @value={{this.email}}></Input>
+    </div>
+    <br>
+    <div>
+        <label for="age">age: </label>
+        <Input id="age" @type="text" @value={{this.age}}></Input>
+    </div>
+    <br>
+    <button type="submit">Add Customer</button>
+    &nbsp;&nbsp;&nbsp;
+    <LinkTo @route="customers">
+        Cancel
+    </LinkTo>
+</form>
