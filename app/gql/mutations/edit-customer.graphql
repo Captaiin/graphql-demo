@@ -1,0 +1,8 @@
+mutation EditCustomer ($id: String!, $name: String, $email: String, $age: Int) {
+  editCustomer(id: $id, name: $name, email: $email, age: $age) {
+    id
+    name
+    email
+    age
+  }
+}
