@@ -9,6 +9,8 @@
     <li>email: {{@model.email}}</li>
 </ul>
 
+<button {{on "click" (fn this.deleteCustomer @model.id)}}>Delete</button>
+
 <LinkTo @route="customers">
     Go Back
 </LinkTo>
